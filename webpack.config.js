@@ -16,6 +16,10 @@ module.exports = {
 				loader: 'babel',
 				include: paths.appSrc,
 				query: require('./config/babel')
+			},
+			{
+				test: /\.css$/,
+				loader: 'style!css'
 			}
 		]
 	}
