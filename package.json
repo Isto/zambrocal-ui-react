@@ -2,10 +2,10 @@
   "name": "zambrocal-ui-react",
   "version": "0.1.0",
   "description": "Zambrocal UI integrations for React",
-  "main": "index.js",
+  "main": "dist/Zambrocal.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node example/scripts/utils/start.js"
+    "build": "webpack --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
     "url": "https://github.com/Isto/zambrocal-ui-react/issues"
   },
   "homepage": "https://github.com/Isto/zambrocal-ui-react#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
 }
